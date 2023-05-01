@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --typography-body1: Roboto;
+  --body-1: Montserrat;
+  --p-body-m-regular: Outfit;
+  --font-dm-sans: "DM Sans";
+  --font-poppins: Poppins;
+
+  /* font sizes */
+  --font-size-mid: 17px;
+  --body-1-size: 20px;
+  --heading-3-size: 48px;
+  --p-body-m-regular-size: 16px;
+  --font-size-21xl: 40px;
+  --font-size-mini: 15px;
+  --font-size-3xs-9: 9.9px;
+
+  /* Colors */
+  --white: #fff;
+  --color-black: #000;
+  --color-gray-100: #fafafa;
+  --basic-theme-gray-100: #18283c;
+  --color-gray-200: #1c2120;
+  --light-text-primary: #1c1c1e;
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --blue: #007aff;
+  --basic-theme-accent-blue-80: #0956ca;
+
+  /* Gaps */
+  --gap-xs: 12px;
+  --gap-4xs-5: 8.5px;
+
+  /* border radiuses */
+  --br-5xl: 24px;
+}

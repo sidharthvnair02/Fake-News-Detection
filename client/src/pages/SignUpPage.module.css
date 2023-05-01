@@ -1,0 +1,207 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.patternIcon {
+  position: absolute;
+  height: 58.98%;
+  width: 106.42%;
+  top: 41.02%;
+  right: -6.42%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.siggUpIllustration {
+  position: absolute;
+  top: 0;
+  left: 336px;
+  width: 1288px;
+  height: 1058px;
+  object-fit: cover;
+  opacity: 0;
+}
+.createAccount1.animate,
+.entryField.animate,
+.formParent.animate,
+.siggUpIllustration.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}
+.signUp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 600px;
+  height: 587px;
+}
+.googleButton {
+  position: absolute;
+  width: 42.1%;
+  top: 480.09px;
+  right: 7.87%;
+  left: 50.03%;
+}
+.loginButtonChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 3.53px;
+  background-color: var(--blue);
+}
+.createAccount {
+  position: absolute;
+  width: 31.7%;
+  top: 25%;
+  left: 34.08%;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  display: inline-block;
+}
+.loginButton {
+  position: absolute;
+  top: 480px;
+  left: 19px;
+  width: 252.6px;
+  height: 33.87px;
+  cursor: pointer;
+  color: var(--white);
+}
+.forgotPassword {
+  position: absolute;
+  top: 75.64%;
+  left: 78.95%;
+  letter-spacing: -0.02em;
+  line-height: 140%;
+  color: var(--color-gray-100);
+  text-align: right;
+}
+.termsAndPrivacyPolicyChild {
+  position: relative;
+}
+.span {
+  color: #2d3748;
+}
+.terms {
+  color: var(--blue);
+}
+.iAgreeToContainer {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 140%;
+}
+.rememberMe,
+.termsAndPrivacyPolicy {
+  position: absolute;
+  top: 441px;
+  left: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8.47px;
+  font-size: var(--font-size-mini);
+}
+.rememberMe {
+  top: 402px;
+  font-family: var(--font-dm-sans);
+}
+.entryField1,
+.entryField2,
+.entryField3,
+.entryField4 {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.entryField2,
+.entryField3,
+.entryField4 {
+  top: 68px;
+}
+.entryField3,
+.entryField4 {
+  top: 0;
+  left: 275px;
+}
+.entryField4 {
+  top: 67px;
+}
+.calendarMonthOutline {
+  position: absolute;
+  top: 34.34px;
+  left: 502.39px;
+  width: 14.11px;
+  height: 14.11px;
+  overflow: hidden;
+}
+.entryField5,
+.entryField6 {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 137.66px;
+  left: 0;
+}
+.entryField6 {
+  top: 134.66px;
+  left: 275px;
+}
+.entryField {
+  position: absolute;
+  top: 165px;
+  left: 25px;
+  width: 527.6px;
+  height: 195.35px;
+  opacity: 0;
+}
+.form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 587px;
+}
+.createAccount1 {
+  position: absolute;
+  top: 12.78%;
+  left: 4.17%;
+  font-size: var(--font-size-21xl);
+  letter-spacing: -0.02em;
+  line-height: 140%;
+  font-family: var(--font-dm-sans);
+  opacity: 0;
+}
+.formParent {
+  position: absolute;
+  top: 226px;
+  left: 36px;
+  width: 600px;
+  height: 587px;
+  opacity: 0;
+}
+.signUpPage {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 9.88px;
+  color: var(--color-gray-200);
+  font-family: var(--font-poppins);
+}

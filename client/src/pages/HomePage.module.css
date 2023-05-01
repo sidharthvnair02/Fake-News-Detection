@@ -1,0 +1,159 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.patternIcon {
+  position: absolute;
+  height: 58.98%;
+  width: 106.42%;
+  top: 41.02%;
+  right: -6.42%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.homePage1Icon {
+  position: absolute;
+  top: 281px;
+  left: 752px;
+  width: 568px;
+  height: 462px;
+  object-fit: cover;
+  opacity: 0;
+}
+.areYouSure.animate,
+.designSystems.animate,
+.homePage1Icon.animate,
+.loremIpsumDolor.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}
+.designSystems {
+  line-height: 32px;
+  color: var(--basic-theme-accent-blue-80);
+}
+.areYouSure,
+.designSystems,
+.loremIpsumDolor {
+  align-self: stretch;
+  position: relative;
+  opacity: 0;
+}
+.areYouSure {
+  font-size: var(--heading-3-size);
+  line-height: 56px;
+  font-weight: 900;
+}
+.loremIpsumDolor {
+  line-height: 32px;
+  font-weight: 500;
+}
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 566px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.getStartedButton,
+.learnMoreButton {
+  position: absolute;
+  top: 304px;
+  left: 0;
+  cursor: pointer;
+}
+.learnMoreButton {
+  left: 193px;
+}
+.registerButton,
+.textParent {
+  position: absolute;
+  top: 328px;
+  left: 120px;
+  width: 566px;
+  height: 368px;
+}
+.registerButton {
+  height: 88%;
+  width: 8.54%;
+  top: 0;
+  right: 0;
+  bottom: 12%;
+  left: 91.46%;
+}
+.about {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-mid);
+  letter-spacing: 0.06em;
+  font-family: var(--typography-body1);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.aboutButton,
+.homeButton {
+  position: absolute;
+  top: 14px;
+  left: 70.94px;
+  width: 57.14px;
+  height: 16px;
+}
+.homeButton {
+  text-decoration: none;
+  height: 32%;
+  width: 4.11%;
+  top: 28%;
+  right: 95.89%;
+  bottom: 40%;
+  left: 0;
+}
+.checkerButton,
+.featuresButton {
+  position: absolute;
+  top: 14px;
+  left: 149.75px;
+  width: 76.85px;
+  height: 17px;
+}
+.checkerButton {
+  left: 248.28px;
+  width: 72.91px;
+  height: 16px;
+}
+.logInButton {
+  position: absolute;
+  top: 14px;
+  left: 1008px;
+  cursor: pointer;
+}
+.navigationBar {
+  position: absolute;
+  top: 90px;
+  left: calc(50% - 600px);
+  width: 1200px;
+  height: 50px;
+}
+.homePage {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--body-1-size);
+  color: var(--basic-theme-gray-100);
+  font-family: var(--body-1);
+}

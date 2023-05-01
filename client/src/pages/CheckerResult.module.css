@@ -1,0 +1,131 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.patternIcon {
+  position: absolute;
+  height: 58.98%;
+  width: 106.42%;
+  top: 41.02%;
+  right: -6.42%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.checkMoreNewButton {
+  position: absolute;
+  top: 761px;
+  left: 585px;
+  cursor: pointer;
+}
+.fakeNewsIllustrationIcon {
+  position: absolute;
+  top: 279px;
+  left: 169px;
+  width: 563px;
+  height: 443px;
+  object-fit: cover;
+  opacity: 0;
+}
+.fakeNewsIllustrationIcon.animate,
+.textBox.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}
+.textBox1 {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  border-radius: 25px;
+  background-color: var(--white);
+  box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.25);
+  border: 3px solid #bdbdbd;
+  box-sizing: border-box;
+  width: 428px;
+  height: 337px;
+}
+.textBox {
+  position: absolute;
+  top: 325px;
+  left: 811px;
+  width: 422px;
+  height: 331px;
+  opacity: 0;
+}
+.registerButton {
+  position: absolute;
+  height: 88%;
+  width: 8.54%;
+  top: 0;
+  right: 0;
+  bottom: 12%;
+  left: 91.46%;
+}
+.about {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-mid);
+  letter-spacing: 0.06em;
+  font-family: var(--typography-body1);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.aboutButton,
+.homeButton {
+  position: absolute;
+  top: 14px;
+  left: 70.94px;
+  width: 57.14px;
+  height: 16px;
+}
+.homeButton {
+  text-decoration: none;
+  height: 32%;
+  width: 4.11%;
+  top: 28%;
+  right: 95.89%;
+  bottom: 40%;
+  left: 0;
+}
+.checkerButton,
+.featuresButton {
+  position: absolute;
+  top: 14px;
+  left: 149.75px;
+  width: 76.85px;
+  height: 17px;
+}
+.checkerButton {
+  left: 248.28px;
+  width: 72.91px;
+  height: 16px;
+}
+.logInButton {
+  position: absolute;
+  top: 14px;
+  left: 1008px;
+  cursor: pointer;
+}
+.navigationBar {
+  position: absolute;
+  top: 90px;
+  left: calc(50% - 600px);
+  width: 1200px;
+  height: 50px;
+}
+.checkerResult {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+}

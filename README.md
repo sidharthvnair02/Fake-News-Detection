@@ -1,5 +1,6 @@
 
-                                                                  # Fake-News-Detection
+#Fake-News-Detection
+
 Project By: 
 
 *Sidharth Nair - 16010120032*,

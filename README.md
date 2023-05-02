@@ -46,5 +46,23 @@ The scores of various models:
 • Recall: 0.954954954954955
 • F1 Score: 0.9246105919003116
 
+![confusion_matrix_logistic_regression](https://user-images.githubusercontent.com/82643868/235762187-0556c921-2527-4e23-b53c-c3448702e47b.png)
+
+2. Random Forest
+• Accuracy: 0.9457714654615881
+• Precision: 0.9090909090909091
+• Recall: 0.990990990990991
+• F1 Score: 0.9482758620689654
+
+![confusion_matrix_random_forest](https://user-images.githubusercontent.com/82643868/235762232-ed5b4c05-0589-4e4f-8da4-1ff24cac4201.png)
+
+3. Naïve Bayes:
+• Accuracy: 0.9186571981923822
+• Precision: 0.8745684695051784
+• Recall: 0.9781209781209781
+• F1 Score: 0.9234507897934386
+
+![confusion_matrix_naivebayes](https://user-images.githubusercontent.com/82643868/235762282-46940bb0-b5e9-4343-a499-2a608a8bf27f.png)
+
 
 

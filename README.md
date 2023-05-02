@@ -18,16 +18,19 @@ information by providing an effective and reliable means of detecting fake news
 
 
 # Motivation:
+Now-a-days no one reads newspapers. Everyone is dependent on the virtual world to get the news which is happening around. But one can not trust the source of the
+information which is passed in this virtual world and believes whatever information they get. This increases the risk of fake news and misconceptions among the real world.To reduce the risk of such fake news and misconceptions we are proposing a Fake News Detection System using Machine Learning models which will automatically
+detect the wrong information being passed and would reduce the fake rumours about something and also reduce the misconception among the real world.
 
-# Scope
+# Scope:
 Our project's focus is identifying bogus news on social media. We want to distinguish between legitimate and bogus news, identify it, and stop it from spreading. We aim to use machine learning algorithms to categorize news stories as bogus or real. Using machine learning methods, we hope to improve the effectiveness of fake news identification and determine which model gives us the most accurate result. Our aim is to create a user friendly software for the user as well as online news providers who post news online.
 
-# Objectives
+# Objectives:
 The primary objective of the proposed system is to examine and research the hidden correlations and patterns between the data in the fake news dataset. The problem's
 answer could offer knowledge to stop the spread of bogus or actual news, which would have significant societal and technological repercussions. Most of the existing research uses various models to handle each of these issues separately. Dealing with fake news gets increasingly crucial because it is one of the essentials that is crucial for society.
 
 
-# System Architecture 
+# System Architecture :
 
 ![image](https://user-images.githubusercontent.com/82643868/235761228-88407a10-c0fe-4370-b59b-535cd901e14f.png)
 

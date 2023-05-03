@@ -80,7 +80,7 @@ function App() {
       <Route path="/login-page" element={<LogInPage />} />
       <Route path="/sign-up-page" element={<SignUpPage />} />
       <Route path="/features" element={<Features />} />
-      <Route path="/checker-result" element={<CheckerResult />} />
+      <Route path="/checker-result/:result" element={<CheckerResult />} />
       <Route path="/checker" element={<Checker />} />
     </Routes>
   );

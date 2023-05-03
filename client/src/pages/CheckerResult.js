@@ -1,9 +1,13 @@
 import { useCallback, useEffect } from "react";
 import { Button } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
-import styles from "./CheckerResult.module.css";
+import styles from "./CheckerResult.module.css"
+import { useLocation, useParams } from "react-router-dom";
+
 const CheckerResult = () => {
+  const location = useLocation();
+  const result = useParams().result;
+
   const navigate = useNavigate();
 
   const onCheckMoreNewButtonClick = useCallback(() => {
@@ -44,6 +48,7 @@ const CheckerResult = () => {
     navigate("/login-page");
   }, [navigate]);
 
+
   return (
     <div className={styles.checkerResult}>
       <img className={styles.patternIcon} alt="" src="/pattern.svg" />
@@ -66,6 +71,12 @@ const CheckerResult = () => {
       />
       <div className={styles.textBox} data-animate-on-scroll>
         <div className={styles.textBox1} />
+        <div className={styles.prediction} data-animate-on-scroll>
+          Prediction 
+        </div>
+        <div className={styles.prediction1} data-animate-on-scroll>
+          {(result==0)?<>Fake News</>:<>Real News</>}
+        </div>
       </div>
       <nav className={styles.navigationBar}>
         <Button
@@ -96,7 +107,6 @@ const CheckerResult = () => {
           variant="ghost"
           w="57.55768966674805px"
           colorScheme="buttonblue"
-          rightIcon={<ArrowForwardIcon />}
           as="a"
           href="/login-page"
           onClick={onLogInButtonClick}

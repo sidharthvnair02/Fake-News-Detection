@@ -6,14 +6,39 @@ import { Button as ChakraButton } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 import styles from "./Checker.module.css";
+import axios from 'axios';
+
 const Checker = () => {
-  const [textBoxDateTimePickerValue, setTextBoxDateTimePickerValue] =
-    useState(null);
+  const [author, setAuthor] = useState("");
+  const [source, setSource] = useState("");
+  const [statement, setStatement] = useState("");
+  const [date, setDate] = useState(new Date());
+
   const navigate = useNavigate();
+
+  const handlePredict = useCallback(() => {
+    // Create the data object to send in the request
+    const data = {
+      author: author,
+      source: source,
+      statement: statement,
+      date: date
+    };
+
+    // Send a POST request to the server/API
+    axios.post('http://127.0.0.1:5000/predict', data)
+      .then(response => {
+        // Handle the response from the server/API
+        const result = response.data.result;
+        alert('Prediction Result: $result');
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, [author, source, statement, date]);
+
   useEffect(() => {
-    const scrollAnimElements = document.querySelectorAll(
-      "[data-animate-on-scroll]"
-    );
+    const scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
@@ -43,7 +68,47 @@ const Checker = () => {
   const onLogInButtonClick = useCallback(() => {
     navigate("/login-page");
   }, [navigate]);
+ 
 
+  const handleButtonClick = () => {
+     // Save the state variables into your data storage
+    console.log(author, source, statement, date);
+    
+    // Send the data to the Flask API
+    fetch('/predict', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        author: author,
+        source: source,
+        statement: statement,
+        date: date.toISOString() // Convert the date to ISO string format
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data.result);
+      //alert(`The prediction result is: ${data.result}`);
+      if (data.result){
+        //navigate('/checker-result',{result: data.result})
+        navigate(`/checker-result/${data.result}`)
+      }
+    })
+    .catch(error => {
+      console.error(error);
+    });
+    
+    // Reset the state variables to their initial values
+    setAuthor("");
+    setSource("");
+    setStatement("");
+    setDate(new Date());
+
+
+  };
+  
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <div className={styles.checker}>
@@ -67,7 +132,9 @@ const Checker = () => {
           variant="outlined"
           type="text"
           label="Author"
-          placeholder="Placeholder"
+          placeholder="Author"
+          value = {author}
+          onChange = {(e) => setAuthor(e.target.value)}
           size="medium"
           margin="none"
           required
@@ -79,7 +146,9 @@ const Checker = () => {
           variant="outlined"
           type="text"
           label="Source"
-          placeholder="Placeholder"
+          placeholder="Source"
+          value={source}
+          onChange={(e) => setSource(e.target.value)}
           size="medium"
           margin="none"
           required
@@ -90,8 +159,10 @@ const Checker = () => {
           color="primary"
           variant="outlined"
           type="text"
-          label="News"
-          placeholder="Placeholder"
+          label="Statement"
+          placeholder="Statement"
+          value={statement}
+          onChange={(e) => setStatement(e.target.value)}
           size="medium"
           margin="none"
           required
@@ -99,10 +170,8 @@ const Checker = () => {
         <div className={styles.textBox3}>
           <DatePicker
             label="Date"
-            value={textBoxDateTimePickerValue}
-            onChange={(newValue) => {
-              setTextBoxDateTimePickerValue(newValue);
-            }}
+            value={date}
+            onChange={(newValue) => setDate(newValue)}
             renderInput={(params) => (
               <TextField
                 {...params}
@@ -121,8 +190,9 @@ const Checker = () => {
           w="180px"
           colorScheme="buttonblue"
           size="lg"
-          as="a"
-          href="/checker-result"
+          onClick={handleButtonClick}
+          //as="a"
+          //href="/checker-result"
         >
           Generate
         </ChakraButton>

@@ -34,6 +34,8 @@
   opacity: 0;
 }
 .fakeNewsIllustrationIcon.animate,
+.prediction.animate,
+.prediction1.animate,
 .textBox.animate {
   animation: 1s ease 0s 1 normal forwards fade-in;
 }
@@ -47,15 +49,33 @@
   border: 3px solid #bdbdbd;
   box-sizing: border-box;
   width: 428px;
-  height: 337px;
+  height: 189px;
 }
+.prediction {
+  top: 19.9px;
+  left: 66px;
+  display: inline-block;
+  width: 289px;
+  height: 41.47px;
+}
+.prediction,
+.prediction1,
 .textBox {
   position: absolute;
-  top: 325px;
+  opacity: 0;
+}
+.prediction1 {
+  top: 92px;
+  left: 66px;
+  display: inline-block;
+  width: 289px;
+  height: 74px;
+}
+.textBox {
+  top: 420px;
   left: 811px;
   width: 422px;
-  height: 331px;
-  opacity: 0;
+  height: 183px;
 }
 .registerButton {
   position: absolute;
@@ -128,4 +148,8 @@
   width: 100%;
   height: 1024px;
   overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-45xl);
+  color: var(--color-black);
+  font-family: var(--typography-body1);
 }

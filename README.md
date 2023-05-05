@@ -69,3 +69,21 @@ The scores of various models:
 
 
 
+# Screenshots 
+![Home](https://user-images.githubusercontent.com/82643868/236485825-2933e7cf-0caf-4225-bfe3-ff4fc81661d2.png)
+
+![Register](https://user-images.githubusercontent.com/82643868/236485541-47a0b539-b0fe-4e10-a709-069411ace7ae.png)
+
+![Login](https://user-images.githubusercontent.com/82643868/236485887-00c22bcc-3c8d-4fad-80ad-051b3af12100.png)
+
+![Checker](https://user-images.githubusercontent.com/82643868/236485378-85b9341c-8973-4131-b5fa-737cee287214.png)
+
+![News1](https://user-images.githubusercontent.com/82643868/236485748-e1e8b350-b3d5-4e05-bf3e-0983d6454878.png)
+
+![Real](https://user-images.githubusercontent.com/82643868/236485954-24eae57d-c6cd-4647-85e5-f51a23f51d46.png)
+
+![News2](https://user-images.githubusercontent.com/82643868/236485998-dd7c21e9-82e8-40ce-98f8-80c32fae0ff8.png)
+
+![Fake](https://user-images.githubusercontent.com/82643868/236486050-fcbd9b67-5678-45a8-8e4c-6526faf6b235.png)
+
+

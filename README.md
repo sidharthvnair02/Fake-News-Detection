@@ -4,7 +4,7 @@
 Project By: 
 
 *Sidharth Nair - 16010120032*,
-*Rahi Patil - 16010120038*,
+*Rahi Patil - 16010120038*
 
 
 Mentor: Mrs Smita Sankhe 
